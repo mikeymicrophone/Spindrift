@@ -20,8 +20,8 @@ struct SpindriftApp: App {
                 CoreStoreSchema(
                     modelVersion: "V1",
                     entities: [
-                        Entity<MICSelecta>("MICSelecta"),
-                        Entity<MICPerformance>("MICPerformance")
+                        Entity<Selecta>("Selecta"),
+                        Entity<Performance>("Performance")
                         // Add other entities here if you have them
                     ]
                 )
@@ -35,7 +35,7 @@ struct SpindriftApp: App {
     
     var body: some Scene {
         WindowGroup {
-            ContentView() //selectas: ListPublisher<MICSelecta>(From<MICSelecta>(), in: dataStack))
+            ContentView(selectas: ListPublisher<Selecta>(From<Selecta>(), in: dataStack))
                 .environment(\.dataStack, dataStack)
             Button(action: addSelecta, label: {
                 Text("Add Claude")
@@ -46,7 +46,7 @@ struct SpindriftApp: App {
     func addSelecta() {
         dataStack.perform(
             asynchronous: { transaction in
-                let newSelecta = transaction.create(Into<MICSelecta>())
+                let newSelecta = transaction.create(Into<Selecta>())
                 
                 // Set properties of newSelecta
                 newSelecta.firstName = "Barclay"
@@ -58,9 +58,9 @@ struct SpindriftApp: App {
             completion: { result in
                 switch result {
                 case .success:
-                    print("Successfully inserted a new MICSelecta")
+                    print("Successfully inserted a new Selecta")
                 case .failure(let error):
-                    print("Failed to insert MICSelecta: \(error)")
+                    print("Failed to insert Selecta: \(error)")
                 }
             }
         )

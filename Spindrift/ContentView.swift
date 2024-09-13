@@ -11,7 +11,7 @@ import Combine
 
 struct ContentView: View {
     @Environment(\.dataStack) var dataStack
-    var selectas: ListPublisher<MICSelecta>
+    var selectas: ListPublisher<Selecta>
     
     var body: some View {
         List {

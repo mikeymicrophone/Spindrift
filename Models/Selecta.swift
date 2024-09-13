@@ -1,5 +1,5 @@
 //
-//  MICSelecta.swift
+//  Selecta.swift
 //  Spindrift
 //
 //  Created by Michael Schwab on 6/26/24.
@@ -8,7 +8,7 @@
 import Foundation
 import CoreStore
 
-class MICSelecta: CoreStoreObject {
+class Selecta: CoreStoreObject {
     @Field.Stored("uniqueID")
     var uniqueID: String = UUID().uuidString
     
@@ -22,5 +22,5 @@ class MICSelecta: CoreStoreObject {
     var moniker: String?
     
     @Field.Relationship("performances", inverse: \.$selecta)
-    var performances: Set<MICPerformance>
+    var performances: Set<Performance>
 }
