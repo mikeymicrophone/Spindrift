@@ -1,5 +1,5 @@
 //
-//  MicSelectaViewModel.swift
+//  SelectaViewModel.swift
 //  Spindrift
 //
 //  Created by Michael Schwab on 8/16/24.
@@ -11,7 +11,7 @@ import Combine
 import SwiftUI
 
 class SelectaViewModel: ObservableObject {
-    @Published var selectas: [MICSelecta] = []
+    @Published var selectas: [Selecta] = []
     private var cancellable: AnyCancellable?
     private var dataStack: DataStack
     
@@ -21,8 +21,8 @@ class SelectaViewModel: ObservableObject {
     }
     
     private func fetchSelectas() {
-        let publisher = dataStack.listPublisher(
-            From<MICSelecta>()
+        let publisher = dataStack.publishList(
+            From<Selecta>()
         )
         
         cancellable = publisher.reactive
@@ -36,7 +36,7 @@ class SelectaViewModel: ObservableObject {
                         print("Failed to fetch selectas: \(error)")
                     }
                 },
-                receiveValue: { (snapshot: ListSnapshot<MICSelecta>) in
+                receiveValue: { (snapshot: ListSnapshot<Selecta>) in
                     self.selectas = snapshot.objects
                 }
             )
