@@ -15,16 +15,8 @@ struct SpindriftApp: App {
     
     init() {
         do {
-            dataStack = DataStack(
-                CoreStoreSchema(
-                    modelVersion: "V1",
-                    entities: [
-                        Entity<Selecta>("Selecta"),
-                        Entity<Performance>("Performance")
-                    ]
-                )
-            )
-            try dataStack.addStorageAndWait()
+            dataStack = DataStackManager.shared.dataStack
+//            try dataStack.addStorageAndWait()
         } catch {
             os_log("\(error)")
         }
@@ -55,9 +47,9 @@ struct SpindriftApp: App {
             completion: { result in
                 switch result {
                 case .success:
-                    print("Successfully inserted a new Selecta")
+                    os_log("Successfully inserted a new Selecta")
                 case .failure(let error):
-                    print("Failed to insert Selecta: \(error)")
+                    os_log("Failed to insert Selecta: \(error)")
                 }
             }
         )

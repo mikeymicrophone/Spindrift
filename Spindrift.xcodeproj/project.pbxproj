@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		761EF5912C94D5EF009FB7F2 /* Spindrift.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 761EF58F2C94D5EF009FB7F2 /* Spindrift.xcdatamodeld */; };
+		761EF5932C950075009FB7F2 /* DataStackManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 761EF5922C950075009FB7F2 /* DataStackManager.swift */; };
+		761EF5942C950075009FB7F2 /* DataStackManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 761EF5922C950075009FB7F2 /* DataStackManager.swift */; };
+		761EF5952C950075009FB7F2 /* DataStackManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 761EF5922C950075009FB7F2 /* DataStackManager.swift */; };
 		763A3BB02C2D13DC00094EBA /* SpindriftApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 763A3BAF2C2D13DC00094EBA /* SpindriftApp.swift */; };
 		763A3BB22C2D13DC00094EBA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 763A3BB12C2D13DC00094EBA /* ContentView.swift */; };
 		763A3BB42C2D13DD00094EBA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 763A3BB32C2D13DD00094EBA /* Assets.xcassets */; };
@@ -41,6 +44,7 @@
 
 /* Begin PBXFileReference section */
 		761EF5902C94D5EF009FB7F2 /* Spindrift.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Spindrift.xcdatamodel; sourceTree = "<group>"; };
+		761EF5922C950075009FB7F2 /* DataStackManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStackManager.swift; sourceTree = "<group>"; };
 		763A3BAC2C2D13DC00094EBA /* Spindrift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Spindrift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		763A3BAF2C2D13DC00094EBA /* SpindriftApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpindriftApp.swift; sourceTree = "<group>"; };
 		763A3BB12C2D13DC00094EBA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -109,6 +113,7 @@
 			isa = PBXGroup;
 			children = (
 				763A3BAF2C2D13DC00094EBA /* SpindriftApp.swift */,
+				761EF5922C950075009FB7F2 /* DataStackManager.swift */,
 				763A3BB12C2D13DC00094EBA /* ContentView.swift */,
 				763A3BB32C2D13DD00094EBA /* Assets.xcassets */,
 				763A3BB52C2D13DD00094EBA /* Spindrift.entitlements */,
@@ -294,6 +299,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				761EF5932C950075009FB7F2 /* DataStackManager.swift in Sources */,
 				763A3BDF2C2D14DD00094EBA /* Selecta.swift in Sources */,
 				761EF5912C94D5EF009FB7F2 /* Spindrift.xcdatamodeld in Sources */,
 				763A3BB22C2D13DC00094EBA /* ContentView.swift in Sources */,
@@ -306,6 +312,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				761EF5942C950075009FB7F2 /* DataStackManager.swift in Sources */,
 				763A3BC22C2D13DE00094EBA /* SpindriftTests.swift in Sources */,
 				76E04B712C38D3DF0075EC8F /* Performance.swift in Sources */,
 				763A3BE02C2D14DD00094EBA /* Selecta.swift in Sources */,
@@ -316,6 +323,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				761EF5952C950075009FB7F2 /* DataStackManager.swift in Sources */,
 				763A3BCE2C2D13DE00094EBA /* SpindriftUITestsLaunchTests.swift in Sources */,
 				763A3BCC2C2D13DE00094EBA /* SpindriftUITests.swift in Sources */,
 			);
