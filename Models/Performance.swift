@@ -8,10 +8,10 @@
 import Foundation
 import CoreStore
 
-class MICPerformance: CoreStoreObject {
+class Performance: CoreStoreObject {
     @Field.Stored("name")
     var name: String = ""
     
     @Field.Relationship("selecta")
-    var selecta: MICSelecta?
+    var selecta: Selecta?
 }
