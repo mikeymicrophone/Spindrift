@@ -14,6 +14,14 @@
 		763A3BC22C2D13DE00094EBA /* SpindriftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 763A3BC12C2D13DE00094EBA /* SpindriftTests.swift */; };
 		763A3BCC2C2D13DE00094EBA /* SpindriftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 763A3BCB2C2D13DE00094EBA /* SpindriftUITests.swift */; };
 		763A3BCE2C2D13DE00094EBA /* SpindriftUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 763A3BCD2C2D13DE00094EBA /* SpindriftUITestsLaunchTests.swift */; };
+		763A3BDC2C2D14A400094EBA /* CoreStore in Frameworks */ = {isa = PBXBuildFile; productRef = 763A3BDB2C2D14A400094EBA /* CoreStore */; };
+		763A3BDF2C2D14DD00094EBA /* MICSelecta.swift in Sources */ = {isa = PBXBuildFile; fileRef = 763A3BDE2C2D14DD00094EBA /* MICSelecta.swift */; };
+		763A3BE02C2D14DD00094EBA /* MICSelecta.swift in Sources */ = {isa = PBXBuildFile; fileRef = 763A3BDE2C2D14DD00094EBA /* MICSelecta.swift */; };
+		76737D202C701B0400E20715 /* MicSelectaViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76737D1F2C701B0400E20715 /* MicSelectaViewModel.swift */; };
+		76737D212C701B0400E20715 /* MicSelectaViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76737D1F2C701B0400E20715 /* MicSelectaViewModel.swift */; };
+		76737D222C701B0400E20715 /* MicSelectaViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76737D1F2C701B0400E20715 /* MicSelectaViewModel.swift */; };
+		76E04B702C38D3DF0075EC8F /* MICPerformance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76E04B6F2C38D3DF0075EC8F /* MICPerformance.swift */; };
+		76E04B712C38D3DF0075EC8F /* MICPerformance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76E04B6F2C38D3DF0075EC8F /* MICPerformance.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +53,9 @@
 		763A3BC72C2D13DE00094EBA /* SpindriftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpindriftUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		763A3BCB2C2D13DE00094EBA /* SpindriftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpindriftUITests.swift; sourceTree = "<group>"; };
 		763A3BCD2C2D13DE00094EBA /* SpindriftUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpindriftUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		763A3BDE2C2D14DD00094EBA /* MICSelecta.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MICSelecta.swift; sourceTree = "<group>"; };
+		76737D1F2C701B0400E20715 /* MicSelectaViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MicSelectaViewModel.swift; sourceTree = "<group>"; };
+		76E04B6F2C38D3DF0075EC8F /* MICPerformance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MICPerformance.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +63,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				763A3BDC2C2D14A400094EBA /* CoreStore in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -75,6 +87,8 @@
 		763A3BA32C2D13DC00094EBA = {
 			isa = PBXGroup;
 			children = (
+				76737D1E2C701AE800E20715 /* ViewModels */,
+				763A3BDD2C2D14C400094EBA /* Models */,
 				763A3BAE2C2D13DC00094EBA /* Spindrift */,
 				763A3BC02C2D13DE00094EBA /* SpindriftTests */,
 				763A3BCA2C2D13DE00094EBA /* SpindriftUITests */,
@@ -129,6 +143,23 @@
 			path = SpindriftUITests;
 			sourceTree = "<group>";
 		};
+		763A3BDD2C2D14C400094EBA /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				763A3BDE2C2D14DD00094EBA /* MICSelecta.swift */,
+				76E04B6F2C38D3DF0075EC8F /* MICPerformance.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		76737D1E2C701AE800E20715 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				76737D1F2C701B0400E20715 /* MicSelectaViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -145,6 +176,9 @@
 			dependencies = (
 			);
 			name = Spindrift;
+			packageProductDependencies = (
+				763A3BDB2C2D14A400094EBA /* CoreStore */,
+			);
 			productName = Spindrift;
 			productReference = 763A3BAC2C2D13DC00094EBA /* Spindrift.app */;
 			productType = "com.apple.product-type.application";
@@ -217,6 +251,9 @@
 				Base,
 			);
 			mainGroup = 763A3BA32C2D13DC00094EBA;
+			packageReferences = (
+				763A3BDA2C2D14A400094EBA /* XCRemoteSwiftPackageReference "CoreStore" */,
+			);
 			productRefGroup = 763A3BAD2C2D13DC00094EBA /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -259,7 +296,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				763A3BDF2C2D14DD00094EBA /* MICSelecta.swift in Sources */,
 				763A3BB22C2D13DC00094EBA /* ContentView.swift in Sources */,
+				76737D202C701B0400E20715 /* MicSelectaViewModel.swift in Sources */,
+				76E04B702C38D3DF0075EC8F /* MICPerformance.swift in Sources */,
 				763A3BB02C2D13DC00094EBA /* SpindriftApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -269,6 +309,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				763A3BC22C2D13DE00094EBA /* SpindriftTests.swift in Sources */,
+				76E04B712C38D3DF0075EC8F /* MICPerformance.swift in Sources */,
+				76737D212C701B0400E20715 /* MicSelectaViewModel.swift in Sources */,
+				763A3BE02C2D14DD00094EBA /* MICSelecta.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -277,6 +320,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				763A3BCE2C2D13DE00094EBA /* SpindriftUITestsLaunchTests.swift in Sources */,
+				76737D222C701B0400E20715 /* MicSelectaViewModel.swift in Sources */,
 				763A3BCC2C2D13DE00094EBA /* SpindriftUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -617,6 +661,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		763A3BDA2C2D14A400094EBA /* XCRemoteSwiftPackageReference "CoreStore" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/JohnEstropia/CoreStore";
+			requirement = {
+				kind = exactVersion;
+				version = 9.2.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		763A3BDB2C2D14A400094EBA /* CoreStore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 763A3BDA2C2D14A400094EBA /* XCRemoteSwiftPackageReference "CoreStore" */;
+			productName = CoreStore;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 763A3BA42C2D13DC00094EBA /* Project object */;
 }

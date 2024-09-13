@@ -6,16 +6,14 @@
 //
 
 import SwiftUI
+import CoreStore
+import Combine
+
 
 struct ContentView: View {
+    @Environment(\.dataStack) var dataStack
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
         }
-        .padding()
     }
 }
 
