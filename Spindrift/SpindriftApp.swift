@@ -12,7 +12,7 @@ import CoreStore
 @main
 struct SpindriftApp: App {
     var dataStack: DataStack!
-    var reactiveStack: DataStack.ReactiveNamespace
+//    var reactiveStack: DataStack.ReactiveNamespace
     
     init() {
         do {
@@ -26,7 +26,7 @@ struct SpindriftApp: App {
                     ]
                 )
             )
-            reactiveStack = dataStack.reactive
+//            reactiveStack = dataStack.reactive
             try dataStack.addStorageAndWait()
         } catch {
             os_log("\(error)")

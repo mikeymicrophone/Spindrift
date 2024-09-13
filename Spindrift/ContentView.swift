@@ -13,7 +13,7 @@ import Combine
 struct ContentView: View {
     @Environment(\.dataStack) var dataStack
     var body: some View {
-        }
+        Text("No display has been possible yet.")
     }
 }
 

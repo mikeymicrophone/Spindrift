@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		761EF5912C94D5EF009FB7F2 /* Spindrift.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 761EF58F2C94D5EF009FB7F2 /* Spindrift.xcdatamodeld */; };
 		763A3BB02C2D13DC00094EBA /* SpindriftApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 763A3BAF2C2D13DC00094EBA /* SpindriftApp.swift */; };
 		763A3BB22C2D13DC00094EBA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 763A3BB12C2D13DC00094EBA /* ContentView.swift */; };
 		763A3BB42C2D13DD00094EBA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 763A3BB32C2D13DD00094EBA /* Assets.xcassets */; };
@@ -17,9 +18,6 @@
 		763A3BDC2C2D14A400094EBA /* CoreStore in Frameworks */ = {isa = PBXBuildFile; productRef = 763A3BDB2C2D14A400094EBA /* CoreStore */; };
 		763A3BDF2C2D14DD00094EBA /* MICSelecta.swift in Sources */ = {isa = PBXBuildFile; fileRef = 763A3BDE2C2D14DD00094EBA /* MICSelecta.swift */; };
 		763A3BE02C2D14DD00094EBA /* MICSelecta.swift in Sources */ = {isa = PBXBuildFile; fileRef = 763A3BDE2C2D14DD00094EBA /* MICSelecta.swift */; };
-		76737D202C701B0400E20715 /* MicSelectaViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76737D1F2C701B0400E20715 /* MicSelectaViewModel.swift */; };
-		76737D212C701B0400E20715 /* MicSelectaViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76737D1F2C701B0400E20715 /* MicSelectaViewModel.swift */; };
-		76737D222C701B0400E20715 /* MicSelectaViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76737D1F2C701B0400E20715 /* MicSelectaViewModel.swift */; };
 		76E04B702C38D3DF0075EC8F /* MICPerformance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76E04B6F2C38D3DF0075EC8F /* MICPerformance.swift */; };
 		76E04B712C38D3DF0075EC8F /* MICPerformance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76E04B6F2C38D3DF0075EC8F /* MICPerformance.swift */; };
 /* End PBXBuildFile section */
@@ -42,6 +40,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		761EF5902C94D5EF009FB7F2 /* Spindrift.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Spindrift.xcdatamodel; sourceTree = "<group>"; };
 		763A3BAC2C2D13DC00094EBA /* Spindrift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Spindrift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		763A3BAF2C2D13DC00094EBA /* SpindriftApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpindriftApp.swift; sourceTree = "<group>"; };
 		763A3BB12C2D13DC00094EBA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -54,7 +53,6 @@
 		763A3BCB2C2D13DE00094EBA /* SpindriftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpindriftUITests.swift; sourceTree = "<group>"; };
 		763A3BCD2C2D13DE00094EBA /* SpindriftUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpindriftUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		763A3BDE2C2D14DD00094EBA /* MICSelecta.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MICSelecta.swift; sourceTree = "<group>"; };
-		76737D1F2C701B0400E20715 /* MicSelectaViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MicSelectaViewModel.swift; sourceTree = "<group>"; };
 		76E04B6F2C38D3DF0075EC8F /* MICPerformance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MICPerformance.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -87,6 +85,7 @@
 		763A3BA32C2D13DC00094EBA = {
 			isa = PBXGroup;
 			children = (
+				761EF58F2C94D5EF009FB7F2 /* Spindrift.xcdatamodeld */,
 				76737D1E2C701AE800E20715 /* ViewModels */,
 				763A3BDD2C2D14C400094EBA /* Models */,
 				763A3BAE2C2D13DC00094EBA /* Spindrift */,
@@ -155,7 +154,6 @@
 		76737D1E2C701AE800E20715 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
-				76737D1F2C701B0400E20715 /* MicSelectaViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -297,8 +295,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				763A3BDF2C2D14DD00094EBA /* MICSelecta.swift in Sources */,
+				761EF5912C94D5EF009FB7F2 /* Spindrift.xcdatamodeld in Sources */,
 				763A3BB22C2D13DC00094EBA /* ContentView.swift in Sources */,
-				76737D202C701B0400E20715 /* MicSelectaViewModel.swift in Sources */,
 				76E04B702C38D3DF0075EC8F /* MICPerformance.swift in Sources */,
 				763A3BB02C2D13DC00094EBA /* SpindriftApp.swift in Sources */,
 			);
@@ -310,7 +308,6 @@
 			files = (
 				763A3BC22C2D13DE00094EBA /* SpindriftTests.swift in Sources */,
 				76E04B712C38D3DF0075EC8F /* MICPerformance.swift in Sources */,
-				76737D212C701B0400E20715 /* MicSelectaViewModel.swift in Sources */,
 				763A3BE02C2D14DD00094EBA /* MICSelecta.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -320,7 +317,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				763A3BCE2C2D13DE00094EBA /* SpindriftUITestsLaunchTests.swift in Sources */,
-				76737D222C701B0400E20715 /* MicSelectaViewModel.swift in Sources */,
 				763A3BCC2C2D13DE00094EBA /* SpindriftUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -680,6 +676,20 @@
 			productName = CoreStore;
 		};
 /* End XCSwiftPackageProductDependency section */
+
+/* Begin XCVersionGroup section */
+		761EF58F2C94D5EF009FB7F2 /* Spindrift.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				761EF5902C94D5EF009FB7F2 /* Spindrift.xcdatamodel */,
+			);
+			currentVersion = 761EF5902C94D5EF009FB7F2 /* Spindrift.xcdatamodel */;
+			name = Spindrift.xcdatamodeld;
+			path = /Users/michaelschwab/Documents/business/Spindrift/Spindrift.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 763A3BA42C2D13DC00094EBA /* Project object */;
 }
